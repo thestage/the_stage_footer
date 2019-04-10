@@ -1,6 +1,6 @@
 # encoding: utf-8
 $:.push File.expand_path("../lib", __FILE__)
-require "skeleton/version"
+require "the_stage_footer/version"
 
 Gem::Specification.new do |s|
   s.name        = "the_stage_footer"
@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.2'
 
   # s.add_runtime_dependency "foo"
-  s.add_development_dependency "rspec"
+  # s.add_development_dependency "rspec"
 end
