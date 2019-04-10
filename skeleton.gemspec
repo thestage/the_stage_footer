@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "skeleton/version"
 
 Gem::Specification.new do |s|
-  s.name        = "The Stage Footer"
+  s.name        = "the_stage_footer"
   s.version     = "0.0.1"
   s.author      = "Chris Hopkins"
   s.email       = ["chris.hopkins@thestage.co.uk"]
