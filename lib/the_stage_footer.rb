@@ -1,4 +1,4 @@
-require 'the_stage_footer/version'
+require 'the_stage_footer/engine'
 
 module TheStageFooter
   # Oh yeah ...
