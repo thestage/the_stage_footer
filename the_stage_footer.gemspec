@@ -1,23 +1,21 @@
-# encoding: utf-8
 $:.push File.expand_path("../lib", __FILE__)
-require "the_stage_footer/engine"
 
+# Maintain your gem's version:
+require "the_stage_footer/version"
+
+# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "the_stage_footer"
-  s.version     = "0.0.1"
-  s.author      = "Chris Hopkins"
+  s.version     = TheStageFooter::VERSION
+  s.authors     = ["Chris Hopkins"]
   s.email       = ["chris.hopkins@thestage.co.uk"]
-  s.homepage    = "https://github.com/thestage/the_stage_footer"
+  s.homepage    = "TODO"
+  s.summary     = "TODO: Summary of TheStageFooter."
+  s.description = "TODO: Description of TheStageFooter."
   s.license     = "MIT"
-  s.summary     = "The Stage's footer for Rails Applications"
-  
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- spec/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
 
-  s.required_ruby_version = '>= 1.9.2'
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
 
-  # s.add_runtime_dependency "foo"
-  # s.add_development_dependency "rspec"
+  s.add_dependency "rails", ">= 4.2.11"
 end
