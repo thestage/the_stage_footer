@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = TheStageFooter::VERSION
   s.authors     = ["Chris Hopkins"]
   s.email       = ["chris.hopkins@thestage.co.uk"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TheStageFooter."
-  s.description = "TODO: Description of TheStageFooter."
+  s.homepage    = "https://www.thestage.co.uk"
+  s.summary     = "The Footer used on The Stage's Rails Apps"
+  s.description = "The Footer used on The Stage's Rails Apps"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
