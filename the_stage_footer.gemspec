@@ -1,6 +1,6 @@
 # encoding: utf-8
 $:.push File.expand_path("../lib", __FILE__)
-require "the_stage_footer/version"
+require "the_stage_footer/engine"
 
 Gem::Specification.new do |s|
   s.name        = "the_stage_footer"
