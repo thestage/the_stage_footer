@@ -19,8 +19,13 @@ footer .heading {
   margin-left: 8px;
 }
 
-footer .container {
+footer .container.training {
   margin-top: 12px;
+}
+
+footer .navbar {
+  font-family: "Roboto", sans-serif;
+  border: 0;
 }
 
 footer .heading {
@@ -104,7 +109,7 @@ footer .nav {
 
 @media (max-width: 990px) {
   footer .heading {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   footer a {
@@ -138,12 +143,13 @@ footer .nav {
     position: static;
     text-align: center;
     font-size: 12px;
+    margin-top: 3px;
   }
 }
 
 @media (max-width: 370px) {
   footer .heading {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
