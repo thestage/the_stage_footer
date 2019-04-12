@@ -51,13 +51,17 @@ footer li.menu ul li a {
 footer li {
   display: flex;
 }
-footer a, footer a:focus, footer a:hover {
+footer a {
   color: #f5f5f5;
   font-size: 14px;
   padding: 0 10px;
   float: left;
   font-weight: normal;
   text-align: left;
+}
+
+footer a:hover {
+  color: #f5f5f5;
 }
 footer a:before {
   background-color: transparent;
@@ -89,7 +93,7 @@ footer  a img {
   right: 15px;
   color: #fff;
   text-align: right;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -142,7 +146,6 @@ footer .nav {
   .footer-copyright {
     position: static;
     text-align: center;
-    font-size: 12px;
     margin-top: 3px;
   }
 }
