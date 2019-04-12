@@ -29,7 +29,7 @@ footer .navbar {
 }
 
 footer .heading {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 22px;
   color: #fff;
   margin-bottom: 5px;
@@ -149,7 +149,7 @@ footer .nav {
 
 @media (max-width: 370px) {
   footer .heading {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
