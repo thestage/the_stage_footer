@@ -130,11 +130,18 @@ footer .nav {
   }
 
   .footer-copyright {
-    position: relative;
+    position: static;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
+
+@media (max-width: 370px) {
+  footer .heading {
+    font-size: 17px;
+  }
+}
+
   
   
 @media only screen and (max-width: 767px) and (min-width: 326px) {
