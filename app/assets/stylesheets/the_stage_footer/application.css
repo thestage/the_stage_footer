@@ -39,11 +39,7 @@ footer li.menu ul li a {
   font-weight: normal;
 }
 footer li {
-  display: inline-block;
-  position: relative;
-  zoom: 1;
-  width: 180px;
-  float: left;
+  display: flex;
 }
 footer a, footer a:focus, footer a:hover {
   color: #f5f5f5;
@@ -119,21 +115,24 @@ footer .nav {
   footer li a {
     padding: 0 8px;
   }
-  /* footer li a:before {
-    position: absolute;
-    top: 9px;
-    left: -1px;
-    display: block;
-    content: '';
-    height: 9px;
-    width: 1px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background-color: #a5a5a5;
-  } */
+
   footer li:first-child a:before {
     display: none
+  }
+
+  .footer-lower-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 12px;
+  }
+
+  .footer-copyright {
+    position: relative;
+    text-align: center;
+    font-size: 13px;
   }
 }
   
