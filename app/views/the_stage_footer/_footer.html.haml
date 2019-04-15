@@ -104,9 +104,9 @@
           %ul.col-xs-6.col-sm-4.col-md-2
             %li.heading
               Legal
-          - legal.each do |link|
-              %li
-                link.title
+            - legal.each do |link|
+                %li= link.title
+      
 
             %li
               = link_to 'Cookies', '/cookies/', target: '_blank'
