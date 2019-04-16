@@ -154,6 +154,9 @@ footer .nav {
   footer .heading {
     font-size: 15px;
   }
+  footer a img {
+    max-width: 200px;
+  }
 }
 
   

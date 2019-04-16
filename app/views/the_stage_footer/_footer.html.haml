@@ -99,31 +99,14 @@
               = link_to 'Google+', 'https://plus.google.com/+thestage/posts', target: '_blank'
             %li
               = link_to 'YouTube', 'https://www.youtube.com/user/thestagenewspaper', target: '_blank'
-            %li
-              = link_to '52 Stages', '/52stages%20', target: '_blank'
           %ul.col-xs-6.col-sm-4.col-md-2
             %li.heading
               Legal
             - legal.each do |link|
-                %li= link.title
-      
-
-            %li
-              = link_to 'Cookies', '/cookies/', target: '_blank'
-            %li
-              = link_to 'Terms and conditions', '/jobs-terms/', target: '_blank'
-            %li
-              = link_to 'Advertising Terms and conditions', '/advertising-terms-and-conditions/', target: '_blank'
-            %li
-              = link_to 'Contributor agreement', '/the-stage-contributor-agreement/', target: '_blank'
-            %li
-              = link_to 'Privacy policy', '/privacy/', target: '_blank'
-            %li
-              = link_to 'House rules', '/house-rules/', target: '_blank'
-            %li
-              = link_to 'GDPR Requests', '/gdpr-requests/', target: '_blank'
-  .span12.footer-lower-container
-    .footer-logo-image
-      = link_to image_tag(logo), root_url, :class => "logo"
-    %span.footer-copyright
-      &copy; Copyright The Stage Media Company Limited #{Time.current.year}
+              %li
+                = link_to link[:title], link[:link], target: '_blank'
+    .span12.footer-lower-container
+      .footer-logo-image
+        = link_to image_tag(logo), root_url, :class => "logo"
+      %span.footer-copyright
+        &copy; Copyright The Stage Media Company Limited #{Time.current.year}
