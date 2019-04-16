@@ -13,10 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
- footer.the_stage_footer {
-    border-bottom: 0px solid #00929e;
-   }
   
   footer .heading {
     margin-left: 8px;
@@ -174,8 +170,6 @@
     }
   }
   
-    
-    
   @media only screen and (max-width: 767px) and (min-width: 326px) {
     footer {
       min-height: 460px;
