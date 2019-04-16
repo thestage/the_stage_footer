@@ -1,0 +1,185 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ footer.the_stage_footer {
+    border-bottom: 0px solid #00929e;
+   }
+  
+  footer .heading {
+    margin-left: 8px;
+  }
+  
+  footer .container.training {
+    margin-top: 12px;
+  }
+  
+  footer .navbar {
+    font-family: "Roboto", sans-serif;
+    border: 0;
+  }
+  
+  footer .heading {
+    font-size: 17px;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  footer li.menu a {
+    font-weight: normal;
+  }
+  footer li.menu ul li a {
+    font-weight: normal;
+  }
+  footer li {
+    display: flex;
+  }
+  footer a {
+    color: #f5f5f5;
+    font-size: 14px;
+    padding: 0 10px;
+    float: left;
+    font-weight: normal;
+    text-align: left;
+  }
+  
+  footer a:hover {
+    color: #f5f5f5;
+  }
+  footer a:before {
+    background-color: transparent;
+  }
+  footer .footer-logo-image {
+    padding-top: 2%;
+    margin-left: 0px;
+  }
+  
+  footer .footer-logo-image a{ 
+    padding: 0px;
+  }
+  footer  a img {
+    width: 300px;
+  }
+  
+  .footer-lower-container {
+    position: relative;
+    padding: 15px;
+    float: left;
+    min-height: 1px;
+    width: 100%;
+  }
+  
+  .footer-copyright {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+  }
+  
+  footer .links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  footer .links ul {
+    padding-left: 0px;
+  }
+  
+  footer .nav {
+    border-bottom: 5px solid #00929e;
+  }
+  
+  @media (max-width: 1200px) {
+    footer .heading {
+      font-size: 17px;
+    }
+  
+    footer a {
+      font-size: 13px;
+    }
+  
+    footer .links ul {
+      width: 33.3%;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    footer .heading {
+      font-size: 17px;
+    }
+  
+    footer a {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    footer {
+      text-align: center;
+      min-height: 10px;
+    }
+    footer li a {
+      padding: 0 8px;
+    }
+  
+    footer li:first-child a:before {
+      display: none
+    }
+  
+    footer .links ul {
+      width: 50%;
+    }
+  
+    .footer-lower-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 35px;
+      margin-bottom: 12px;
+    }
+  
+    .footer-copyright {
+      position: static;
+      text-align: center;
+      margin-top: 3px;
+    }
+  }
+  
+  @media (max-width: 370px) {
+    footer .heading {
+      font-size: 15px;
+    }
+    footer a img {
+      max-width: 200px;
+    }
+  }
+  
+    
+    
+  @media only screen and (max-width: 767px) and (min-width: 326px) {
+    footer {
+      min-height: 460px;
+      top: 235px;
+    }
+  }
+    

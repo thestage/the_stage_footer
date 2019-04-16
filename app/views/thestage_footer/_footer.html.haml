@@ -1,0 +1,107 @@
+.container
+  .links
+    %ul
+      %li.heading
+        Get in touch
+      %li
+        = link_to 'Subscribe', 'http://subscriptions.thestage.co.uk/?utm_source=bottom%20navigation%20bar&#038;utm_medium=navigation%20bar&#038;utm_campaign=the%20stage%20bottom%20navigation%20bar', target: '_blank'
+      %li
+        = link_to 'About The Stage', '/about/', target: '_blank'
+      %li
+        = link_to 'Contact us', '/contact/', target: '_blank'
+      %li
+        = link_to 'Advertising enquiries', '/advertise/', target: '_blank'
+      %li
+        = link_to 'Where to buy The Stage', 'http://bit.ly/buystage', target: '_blank'
+      %li
+        = link_to 'Subscriptions FAQ', '/faq/', target: '_blank'
+      %li
+        = link_to 'Scholarships FAQ', '/the-stage-scholarships-faq/', target: '_blank'
+      %li
+        = link_to 'Press Centre', '/press-centre', target: '_blank'
+      %li
+        = link_to 'Careers at The Stage', 'http://careers.thestage.co.uk/', target: '_blank'
+
+    %ul
+      %li.heading
+        Editorial
+      %li
+        = link_to 'Home', '/', target: '_blank'
+      %li
+        = link_to 'News', '/news/', target: '_blank'
+      %li
+        = link_to 'Reviews', '/reviews/', target: '_blank'
+      %li
+        = link_to 'Option', '/opinion/', target: '_blank'
+      %li
+        = link_to 'Features', '/features/', target: '_blank'
+      %li
+        = link_to 'Advice', '/advice/', target: '_blank'
+      %li
+        = link_to 'Edinburgh', '/tag/edfringe,edinburgh-international-festival/', target: '_blank'
+    %ul
+      %li.heading
+        More from The Stage
+      %li
+        = link_to 'Archive', 'http://archive.thestage.co.uk', target: '_blank'
+      %li
+        = link_to 'Castings', 'http://castings.thestage.co.uk', target: '_blank'
+      %li
+        = link_to 'Competitions', 'http://castings.thestage.co.uk', target: '_blank'
+      %li
+        = link_to 'Dating', 'http://www.lovearts.co.uk/s/a/19425?utm_source=thestage.co.uk&#038;utm_medium=referral&#038;utm_content=thestage_nav_bar&#038;utm_campaign=thestage_nav_bar', target: '_blank'
+      %li
+        = link_to 'Digital edition', '/digital/', target: '_blank'
+      %li
+        = link_to 'Directory', '/directory/', target: '_blank'
+      %li
+        = link_to 'Get Into Theatre', 'https://getintotheatre.org/', target: '_blank'
+      %li
+        = link_to 'Jobs', '/jobs/', target: '_blank'
+      %li
+        = link_to 'Mobile apps', '/app/', target: '_blank'
+      %li
+        = link_to 'Tickets', 'http://www.lovetheatre.com/thestage', target: '_blank'
+      %li
+        = link_to 'Training', '/training/', target: '_blank'
+    %ul
+      %li.heading
+        Awards
+      %li
+        = link_to 'The Stage Awards', '/awards/', target: '_blank'
+      %li
+        = link_to 'The Stage Debut Awards', 'http://supports.thestage.co.uk/debut-awards', target: '_blank'
+      %li
+        = link_to 'The Stage Edinburgh Awards', 'https://www.edfringe.com/media/award-winners#StageAward', target: '_blank'
+      %li
+        = link_to 'UK Theatre Awards', 'http://uktheatre.org/training-events/uk-theatre-awards/', target: '_blank'
+      %li
+        = link_to 'SMA Awards', 'http://www.stagemanagementassociation.co.uk/conference/awards', target: '_blank'
+    %ul
+      %li.heading
+        Social media
+      %li
+        = link_to 'Facebook', 'https://www.facebook.com/thestage', target: '_blank'
+      %li
+        = link_to 'Twitter', 'https://twitter.com/TheStage', target: '_blank'
+      %li
+        = link_to 'Instagram', 'http://instagram.com/thestageuk', target: '_blank'
+      %li
+        = link_to 'Linkedin', 'https://www.linkedin.com/company/the-stage-media-company-ltd', target: '_blank'
+      %li
+        = link_to 'Pinterest', 'https://uk.pinterest.com/thestage/', target: '_blank'
+      %li
+        = link_to 'Google+', 'https://plus.google.com/+thestage/posts', target: '_blank'
+      %li
+        = link_to 'YouTube', 'https://www.youtube.com/user/thestagenewspaper', target: '_blank'
+    %ul
+      %li.heading
+        Legal
+      - legal.each do |link|
+        %li
+          = link_to link[:title], link[:link], target: '_blank'
+.footer-lower-container
+  .footer-logo-image
+    = link_to image_tag(logo), root_url, :class => "logo"
+  %span.footer-copyright
+    &copy; Copyright The Stage Media Company Limited #{Time.current.year}
