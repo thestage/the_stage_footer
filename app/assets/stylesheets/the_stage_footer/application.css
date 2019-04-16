@@ -67,7 +67,6 @@ footer a:before {
   background-color: transparent;
 }
 footer .footer-logo-image {
-  @extend .row;
   padding-top: 2%;
   margin-left: 0px;
 }
