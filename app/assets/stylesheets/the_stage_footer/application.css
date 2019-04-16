@@ -40,11 +40,7 @@ footer .heading {
   font-weight: bold;
   text-align: left;
 }
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 footer li.menu a {
   font-weight: normal;
 }
@@ -98,6 +94,15 @@ footer  a img {
   font-size: 12px;
 }
 
+footer .links{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .links ul {
+  padding-left: 0px;
+}
 
 footer .nav {
   border-bottom: 5px solid #00929e;
@@ -110,6 +115,10 @@ footer .nav {
 
   footer a {
     font-size: 13px;
+  }
+
+  footer .links ul {
+    width: 33.3%;
   }
 }
 
@@ -134,6 +143,10 @@ footer .nav {
 
   footer li:first-child a:before {
     display: none
+  }
+
+  footer .links ul {
+    width: 50%;
   }
 
   .footer-lower-container {
