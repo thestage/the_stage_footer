@@ -1,4 +1,4 @@
-.container
+.footer-container
   .links
     %ul
       %li.heading
@@ -100,8 +100,8 @@
       - legal.each do |link|
         %li
           = link_to link[:title], link[:link], target: '_blank'
-.footer-lower-container
-  .footer-logo-image
-    = link_to image_tag(logo), root_url, :class => "logo"
-  %span.footer-copyright
-    &copy; Copyright The Stage Media Company Limited #{Time.current.year}
+  .footer-lower-container
+    .footer-logo-image
+      = link_to image_tag(logo), root_url, :class => "logo"
+    %span.footer-copyright
+      &copy; Copyright The Stage Media Company Limited #{Time.current.year}
